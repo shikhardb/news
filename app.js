@@ -9,6 +9,8 @@ var bcrypt = require('bcryptjs');
 
 // mongoose settings and schema
 
+// SET MONGOLAB_URI="mongodb://shikhar:abcd123@ds139979.mlab.com:39979/novosti"
+
 var newsSchema = new mongoose.Schema({
   title: String,
   author: String,
@@ -21,7 +23,12 @@ var newsSchema = new mongoose.Schema({
 
 var News = mongoose.model('News', newsSchema);
 
-mongoose.connect('localhost');
+var uri = "mongodb://shikhar:abcd123@ds139979.mlab.com:39979/novosti";
+
+mongoose.connect(uri, function (error) {
+    if (error) console.error(error);
+    else console.log('mongo connected');
+});
 
 var app = express();
 
