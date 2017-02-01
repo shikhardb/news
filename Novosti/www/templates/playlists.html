@@ -1,13 +1,16 @@
 <ion-view view-title="Hot News">
     <ion-content  direction="y" on-scroll="scroll()" on-scroll-complete="scrollb()" ng-class="{'has-super-tabs': scrolling, '': !scrolling}">
-      <div class="news-card" ng-repeat="n in news" href="#/app/playlists/{{playlist.id}}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url({{n.image}});">
+      <div class="news-card" ng-click="openNews('bounceIn', n)" ng-repeat="n in news" href="#/app/playlists/{{playlist.id}}" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url({{n.image}});">
             <div class="container">
                 <span class="card-title">
                     {{n.title}}
                 </span>
                 <br>
                 <span class="author">
-                    By Shikhar Dubey
+                    By {{n.author}}
+                </span>
+                <span class="tags">
+                    #{{n.tags}}
                 </span>
 
             </div>

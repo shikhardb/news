@@ -1,0 +1,25 @@
+<ion-view view-title={{n.title}}>
+    <ion-content>
+    	<i class="icon ion-android-arrow-back backicon" ng-click="hideModal()"></i>
+    	<img ng-src="{{article.image}}" alt="" class="article-image">
+            <div class="article-container">
+                <div class="article-title">
+                    {{article.title}}
+                </div>
+                <div class="article-divider"></div>
+                <br>
+                <div class="row">
+	                <div class="col article-author">
+	                    By {{article.author}}
+	                </div>
+	                <div class="col article-tags">
+	                    #{{article.tags}}
+	                </div>
+                </div>
+                <br>
+                <div class="article-description">
+                    {{article.description}}
+                </div>                
+            </div>
+    </ion-content>
+</ion-view>
