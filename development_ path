@@ -1,0 +1,41 @@
+NodeJS App
+
+1. Develop a node app with authentication - DONE
+2. Make the admin user id - DONE
+2. Make the news form with following fields - DONE
+    Heading
+    Author
+    Tags
+    Date & time
+    Image
+    Description
+    Device ID
+3. Make a CRUD of that
+4. Now on home, send the data on the base of decreasing time - DONE
+5. Send 20 news at one time - DONE
+6. Make the pagination
+
+Ionic App
+
+1. Design a logo and the UI layout
+2. Create the basic flow in Ionic creator with push notifications
+3. Make the app with the data binding in angular
+4. Add share buttons
+5. Deploy on Play Store
+
+
+MongoDB Model
+
+User {
+    News: {
+        id : long,
+        author : string,
+        tags : [],
+        time : D&T,
+        image : string,
+        heading : string,
+        description : string,
+        device: string
+    },
+    Password : string
+}

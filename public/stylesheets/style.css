@@ -1,0 +1,11 @@
+body {
+  padding: 50px;
+  font: 14px sans-serif;
+  min-height: 100vh
+  background: -webkit-linear-gradient(-3deg, rgb(237, 22, 187), rgb(53, 154, 255));
+  background: linear-gradient(-3deg, rgb(237, 22, 187), rgb(53, 154, 255));
+}
+
+a {
+  color: #00B7FF;
+}
